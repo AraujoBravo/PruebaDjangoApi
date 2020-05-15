@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f415829-446f-4c8d-a21d-dc4e92e31928" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/apps/apis/static/apis/css/sb-admin-2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/apis/static/apis/css/sb-admin-2.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/apis/templates/routingorder.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/apis/templates/routingorder.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +36,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/apps/apis/static/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/apps/apis/static/apis/css" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -50,6 +50,7 @@
       <recent name="D:\JuanEAB\Documents\Trabajos laborales\Prueba\prueba\apps\apis\static\apis" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JuanEAB\Documents\Trabajos laborales\Prueba\prueba\apps\apis\static\apis\css" />
       <recent name="D:\JuanEAB\Documents\Trabajos laborales\Prueba\prueba\apps\apis\static\css" />
       <recent name="D:\JuanEAB\Documents\Trabajos laborales\Prueba\prueba\apps\apis\static" />
       <recent name="D:\JuanEAB\Documents\Trabajos laborales\Prueba\prueba\apps\apis\static\img" />
@@ -92,7 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1589500225561</updated>
       <workItem from="1589500226718" duration="144000" />
-      <workItem from="1589531265975" duration="36589000" />
+      <workItem from="1589531265975" duration="37145000" />
     </task>
     <servers />
   </component>
