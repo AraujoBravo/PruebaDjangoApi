@@ -112,7 +112,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-LOGIN_URL = 'apps:index'
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
