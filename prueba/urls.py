@@ -24,4 +24,4 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('', TemplateView.as_view(template_name='routingorder.html'), name='inicio'),
     path('', include('apps.apis.urls')),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]
