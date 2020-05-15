@@ -4,9 +4,9 @@
 <head class="">
     <meta charset="UTF-8">
     <title>Prueba</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}">
-    <link href="{% static "css/sb-admin-2.min.css" %}" rel="stylesheet">
-    <link href="{% static "css/main.css" %}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'apis/css/normalize.css' %}">
+    <link href="{% static "apis/css/sb-admin-2.min.css" %}" rel="stylesheet">
+    <link href="{% static "apis/css/main.css" %}" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -56,17 +56,17 @@
     </section>
 </div>
 <footer>
-    <a href="tel:985038395"><img class="social-icon" src="{% static 'img/phone.png' %}" alt="telefono">985038395</a>
-    <a href="mailto:juane.araujob@gmail.com"><img class="social-icon" src="{% static 'img/mail.png' %}"
+    <a href="tel:985038395"><img class="social-icon" src="{% static 'apis/img/phone.png' %}" alt="telefono">985038395</a>
+    <a href="mailto:juane.araujob@gmail.com"><img class="social-icon" src="{% static 'apis/img/mail.png' %}"
                                                   alt="Facebook logo">juane.araujob@gmail.com</a>
     <p>&copy; 2020 Juan Araujo</p>
 </footer>
 </body>
 <!-- Bootstrap core JavaScript-->
-<script src="{% static "vendor/jquery/jquery.min.js" %}"></script>
-<script src="{% static "vendor/bootstrap/js/bootstrap.bundle.min.js" %}"></script>
+<script src="{% static "apis/vendor/jquery/jquery.min.js" %}"></script>
+<script src="{% static "apis/vendor/bootstrap/js/bootstrap.bundle.min.js" %}"></script>
 <!-- Core plugin JavaScript-->
-<script src="{% static "vendor/jquery-easing/jquery.easing.min.js" %}"></script>
+<script src="{% static "apis/vendor/jquery-easing/jquery.easing.min.js" %}"></script>
 <script>
     document.getElementById("fechainicial").addEventListener("change", function (){
         fecha_final = document.getElementById("fechafinal").value;
