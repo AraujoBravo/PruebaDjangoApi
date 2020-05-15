@@ -4,6 +4,8 @@ from rest_framework import status
 
 from apps.apis.models import Routingorder
 from apps.apis.serializers import RoutingOrderSerializer
+
+
 class RoutingOrder(APIView):
     model = Routingorder
     serializer_model = RoutingOrderSerializer
