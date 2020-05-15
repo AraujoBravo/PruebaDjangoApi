@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f415829-446f-4c8d-a21d-dc4e92e31928" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prueba/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/prueba/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/apis/static/apis/css/sb-admin-2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/apis/static/apis/css/sb-admin-2.min.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1589500225561</updated>
       <workItem from="1589500226718" duration="144000" />
-      <workItem from="1589531265975" duration="36159000" />
+      <workItem from="1589531265975" duration="36589000" />
     </task>
     <servers />
   </component>
@@ -104,6 +104,10 @@
       <screen x="1920" y="0" width="1600" height="870" />
     </state>
     <state x="2439" y="250" key="#com.intellij.fileTypes.FileTypeChooser/0.30.1536.834/1920.0.1600.870@1920.0.1600.870" timestamp="1589573093014" />
+    <state x="2404" y="194" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589575026733">
+      <screen x="1920" y="0" width="1600" height="870" />
+    </state>
+    <state x="2404" y="194" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.30.1536.834/1920.0.1600.870@1920.0.1600.870" timestamp="1589575026733" />
     <state x="548" y="202" key="FileChooserDialogImpl" timestamp="1589500362655">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
@@ -118,5 +122,9 @@
       <screen x="0" y="30" width="1536" height="834" />
     </state>
     <state x="465" y="271" key="com.intellij.ide.util.TipDialog/0.30.1536.834/1920.0.1600.870@0.30.1536.834" timestamp="1589531289130" />
+    <state x="2370" y="46" width="607" height="804" key="find.popup" timestamp="1589575015318">
+      <screen x="1920" y="0" width="1600" height="870" />
+    </state>
+    <state x="2370" y="46" width="607" height="804" key="find.popup/0.30.1536.834/1920.0.1600.870@1920.0.1600.870" timestamp="1589575015318" />
   </component>
 </project>
