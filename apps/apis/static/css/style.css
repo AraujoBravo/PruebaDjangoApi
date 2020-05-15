@@ -1,0 +1,246 @@
+body {
+    padding-right: 0px !important;
+}
+
+.margin-topbar {
+    margin-bottom: 0px !important;
+}
+
+.topnav {
+    margin-top: -2px !important;
+    overflow: hidden;
+    background-color: rgba(102, 146, 80, 0.596);
+}
+
+.topnav a {
+    float: left;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: rgba(110, 240, 233, 0.678);
+    color: black;
+}
+
+.topnav a.active {
+    background-color: rgba(199, 202, 46, 0.822);
+    color: white;
+}
+
+th {
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+.bg-gradient-blue {
+    background-color: #00589C;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #00589C), to(#1c4182));
+    background-image: linear-gradient(180deg, #00589C 10%, #1c4182 100%);
+    background-size: cover;
+}
+
+.bg-gradient-blue {
+    background-color: #00589C !important;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #00589C), to(#1c4182));
+    background-image: linear-gradient(180deg, #00589C 10%, #1c4182 100%);
+    background-size: cover;
+}
+
+.border-left-p {
+    border-left: 0.25rem solid #838383 !important;
+}
+
+.border-left-d {
+    border-left: 0.25rem solid #e70e0e !important;
+}
+
+.border-left-a {
+    border-left: 0.25rem solid #4174d1 !important;
+}
+
+.border-left-c {
+    border-left: 0.25rem solid #dfc907 !important;
+}
+
+.row-actualizacion {
+    border-left: 0.35rem solid #4174d1 !important;
+    padding: 12px;
+}
+
+.row-correccion {
+    border-left: 0.35rem solid #dfc907 !important;
+}
+
+.color-text-nuevo {
+    color: rgb(175, 68, 160);
+    font-weight: bold;
+    text-align: center;
+}
+
+.color-text-editado {
+    color: rgb(169, 88, 29);
+    font-weight: bold;
+    text-align: center;
+}
+
+.color-text-rechazado {
+    color: rgb(169, 15, 40);
+    font-weight: bold;
+    text-align: center;
+}
+
+.color-text-finalizado {
+    color: rgb(12, 0, 76);
+    font-weight: bold;
+    text-align: center;
+}
+
+.color-text-aceptado {
+    color: rgb(58, 140, 81);
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-header-2 {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #36b9cc;
+    border-bottom: 1px solid #e3e6f0;
+}
+
+.card-header-3 {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(163, 198, 244, 0.16);
+    border-bottom: 1px solid #e3e6f0;
+}
+
+.card-accordion {
+    color: #1c294e;
+}
+
+.card-accordion:hover {
+    color: green;
+    text-decoration-line: none;
+}
+
+.card-accordion:focus {
+    color: green;
+}
+
+.show-front > div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.show-front > div:hover {
+    background-color: #ebebeb !important;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.pdf-download {
+    padding: 2px;
+}
+
+.pdf-download:hover {
+    color: #1115ff;
+    border: 1px solid #2d2e33;
+}
+
+.pdf-ver-href {
+    padding: 2px;
+}
+
+.pdf-ver-href:hover {
+    color: #1115ff;
+    border: 1px solid #2d2e33;
+    text-decoration-line: none;
+}
+
+.contenedor-reporte-corregir {
+    margin-left: 27%;
+}
+
+.modal-verPDF-tittle {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    align-self: center;
+    margin-left: 15px;
+}
+
+.contenedor-reporte {
+    margin-left: 20%;
+    margin-top: 10%;
+    position: absolute;
+    width: 60%;
+    height: 20%;
+}
+
+.contenedor-cambiar-password {
+    margin-left: 30%;
+    margin-top: 10%;
+    position: absolute;
+    width: 40%;
+    height: 37%;
+}
+
+.error_defaultPassword {
+    margin-top: -10px;
+    margin-left: 20px;
+    color: red;
+}
+
+.error-cambiar-password {
+    color: red;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.contenido-reporte {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    /* display: flex; */
+    /* width: 60%; */
+    /*height: 55%;*/
+}
+
+.barra-lateral {
+    min-height: 10%;
+    max-width: 20%;
+    border-radius: 5px !important;
+    /*margin-left: 50%;
+    /* margin-top: 3.5%; */
+    /*min-height: 100%;
+    max-width: 15%;
+    overflow: hidden;
+    position: absolute;*/
+}
+
+.informacion-reporte {
+    /* margin-right: 50%; */
+    width: 100%;
+    /* min-height: 100%; */
+    /* position: relative; */
+    margin: 0px;
+}
+
+.tab-reporte {
+    padding-left: 135px;
+    padding-right: 0px;
+}
+
+.tooltip-inner {
+    white-space: pre-wrap;
+    text-align: left;
+}
+
+.radio-inline {
+    padding-left: 15px;
+    padding-right: 15px;
+}

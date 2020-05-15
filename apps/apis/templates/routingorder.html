@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head class="">
+    <meta charset="UTF-8">
+    <title>Prueba</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}">
+    <link href="{% static "css/sb-admin-2.min.css" %}" rel="stylesheet">
+    <link href="{% static "css/main.css" %}" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1>PRUEBA</h1>
+    <h2>Desarrollador junior</h2>
+</header>
+<div id="wrapper_body">
+    <section id="enlistado">
+        <div class="row">
+            <h3><p>1. API REST: Información de routing order :: URL -> </p></h3>
+            <h4><a href="http://127.0.0.1:8000/routingOrder" target="_blank">http://127.0.0.1:8000/routingOrder/</a></h4>
+        </div>
+    </section>
+    <section id="input">
+        <div class="title"><p>INPUT</p></div>
+        <p>Ingresar rango de fechas:</p>
+        <form>
+            <li><p>Fecha inicial: </p> <input type="date" id="fechainicial" name="fechainicial" required></li>
+            <li><p>Fecha final: </p> <input type="date" id="fechafinal" name="fechafinal" required></li>
+            <li>
+                <button type="button" id="bt_buscar" onclick="buscarRoutingOrder()" disabled> Buscar</button>
+            </li>
+        </form>
+    </section>
+    <section id="output">
+        <div class="title"><p>OUTPUT</p></div>
+        <p>Formato JSON:</p>
+        <textarea id="json_result" rows="8" cols="100" disabled></textarea>
+        <p>Tabla:</p>
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>N°</th>
+                <th>Numero RoutingOrder</th>
+                <th>Tipo Operacion</th>
+                <th>Nombre Shipper</th>
+                <th>Codigo EjecutivoVenta</th>
+                <th>Fecha emision</th>
+                <th>Numero GuiaMaster</th>
+                <th>Descripcion merca</th>
+                <th>Condicion carga</th>
+            </tr>
+            </thead>
+            <tbody id="table_body_result">
+            </tbody>
+        </table>
+    </section>
+</div>
+<footer>
+    <a href="tel:985038395"><img class="social-icon" src="{% static 'img/phone.png' %}" alt="telefono">985038395</a>
+    <a href="mailto:juane.araujob@gmail.com"><img class="social-icon" src="{% static 'img/mail.png' %}"
+                                                  alt="Facebook logo">juane.araujob@gmail.com</a>
+    <p>&copy; 2020 Juan Araujo</p>
+</footer>
+</body>
+<!-- Bootstrap core JavaScript-->
+<script src="{% static "vendor/jquery/jquery.min.js" %}"></script>
+<script src="{% static "vendor/bootstrap/js/bootstrap.bundle.min.js" %}"></script>
+<!-- Core plugin JavaScript-->
+<script src="{% static "vendor/jquery-easing/jquery.easing.min.js" %}"></script>
+<script>
+    document.getElementById("fechainicial").addEventListener("change", function (){
+        fecha_final = document.getElementById("fechafinal").value;
+        fecha_inicial = document.getElementById("fechainicial").value;
+
+        if(fecha_final && fecha_inicial){
+            document.getElementById("bt_buscar").disabled = false;
+        }else{
+            document.getElementById("bt_buscar").disabled = true;
+        }
+    });
+    document.getElementById("fechafinal").addEventListener("change", function (){
+        fecha_final = document.getElementById("fechafinal").value;
+        fecha_inicial = document.getElementById("fechainicial").value;
+
+        if(fecha_final && fecha_inicial){
+            document.getElementById("bt_buscar").disabled = false;
+        }else{
+            document.getElementById("bt_buscar").disabled = true;
+        }
+    });
+    buscarRoutingOrder = function () {
+        document.getElementById("json_result").value = "";
+        document.getElementById('table_body_result').innerHTML = "";
+        var data = {
+            fechainicial: document.getElementById("fechainicial").value,
+            fechafinal: document.getElementById("fechafinal").value
+        };
+        console.log(data);
+        $.post("http://127.0.0.1:8000/routingOrder/", data, function (data) {
+            console.log(data)
+            if (data.status_code == 200) {
+                document.getElementById("json_result").value = JSON.stringify(data.results, null, ' ');
+                var rowResult = "";
+                for (let i = 0; i < data.results.length; i++) {
+                    result = data.results[i];
+                    let contador = i + 1;
+                    rowResult =
+                        "<tr>" +
+                        "<td>" + contador + "</td>" +
+                        "<td>" + result.numeroroutingorder + "</td>" +
+                        "<td>" + result.tipooperacion + "</td>" +
+                        "<td>" + result.nombre_shipper + "</td>" +
+                        "<td>" + result.codigoejecutivoventa + "</td>" +
+                        "<td>" + result.fechaemision + "</td>" +
+                        "<td>" + result.numeroguiamaster + "</td>" +
+                        "<td>" + result.descripcionmerca + "</td>" +
+                        "<td>" + result.condicioncarga + "</td>" +
+                        "</tr>";
+                    document.getElementById('table_body_result').innerHTML += rowResult;
+                }
+            }
+        });
+    };
+</script>
+</html>
