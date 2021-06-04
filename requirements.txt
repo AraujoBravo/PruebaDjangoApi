@@ -1,6 +1,6 @@
 djangorestframework
 certifi==2019.6.16
-Django==2.2.10
+Django==2.2.21
 asgiref==3.2.7
 pip==10.0.1
 psycopg2==2.8.5
