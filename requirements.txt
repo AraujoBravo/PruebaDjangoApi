@@ -1,5 +1,5 @@
 djangorestframework
-certifi==2019.6.16
+certifi==2022.12.7
 django>=2.2.24
 asgiref==3.2.7
 pip>=19.2
